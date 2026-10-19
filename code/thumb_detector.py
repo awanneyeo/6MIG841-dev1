@@ -212,11 +212,8 @@ def is_thumb_extended(metrics: HandMetrics) -> bool:
         extended (bool): vrai si la chaine du pouce est strictement croissante
     --------------------------------------------------------------------------
     """
-    # Indice : comparer les trois distances au poignet dans l'ordre MCP, IP, TIP
-    # Tests : test_verdict_des_cinq_mains_canoniques, test_pouce_leve_reste_valide_quelle_que_soit_lechelle
-    raise NotImplementedError(
-        "fonction 'is_thumb_extended' a implementer (voir l'enonce et les tests cites)"
-    )
+    d = metrics.distances_to_wrist
+    return d[THUMB_MCP] < d[THUMB_IP] < d[THUMB_TIP]
 
 
 def thumb_vertical_angle(points: Sequence[tuple[float, float]],
