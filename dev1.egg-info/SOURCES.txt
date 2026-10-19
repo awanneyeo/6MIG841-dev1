@@ -1,0 +1,12 @@
+pyproject.toml
+code/detect_thumbs.py
+code/emotion_detector.py
+code/thumb_detector.py
+dev1.egg-info/PKG-INFO
+dev1.egg-info/SOURCES.txt
+dev1.egg-info/dependency_links.txt
+dev1.egg-info/top_level.txt
+test/test_emotion_detector.py
+test/test_hud.py
+test/test_thumb_counter.py
+test/test_thumb_detector.py
